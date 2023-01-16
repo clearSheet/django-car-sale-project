@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'cars/css/cars.css' %}">
+{% endblock %}
+{% block title %}Автомобили{% endblock %}
+{% block content %}
+    <div class="features">
+        {%  if cars %}
+        <h4 class="header-text">Автомобили в наличии</h4>
+            {% for car in cars %}
+                <div class="car-card-all">
+                    <h3 class="name-car">{{ car.brand}} {{ car.model }}</h3>
+                    <h4 class="price-car">{{ car.price }} </h4>
+                </div>
+
+            {% endfor %}
+        {% else %}
+            <h4 class="header-text">По данному запросу автомобили не найдены!</h4>
+        {% endif %}
+    </div>
+{% endblock %}

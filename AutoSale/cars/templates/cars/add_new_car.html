@@ -1,0 +1,137 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'cars/css/add_new_car.css' %}">
+{% endblock %}
+{% block title %}Добавление объявления{% endblock %}
+{% block content %}
+    <h1>Добавление нового объявления</h1>
+    <div>
+        <form method="post">
+            <div class="label-car">
+                <label for="label">Марка авто</label>
+                <select id="label" name="lable">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            </div>
+
+            <div class="label-car">
+                <label for="model">Модель авто</label>
+                <select id="model" name="lable">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            </div>
+
+            <div class="label-car">
+                <label for="price">Цена</label>
+                <input class="car-price" type="text" id="price" name="price" placeholder="руб.">
+            </div>
+
+            <div class="label-car">
+                <label for="year">Год выпуска</label>
+                <input class="car-price" type="text" id="year" name="year" placeholder="2000 г.">
+            </div>
+
+            <div class="label-car">
+                <label for="power">Мощность по птс</label>
+                <input class="car-price" type="text" id="power" name="power" placeholder="л/с">
+            </div>
+
+            <div class="label-car">
+                <label for="transmission">Коробка передач</label>
+                <select id="transmission" name="transmission">
+                  <option value="automatic_transmission">АКПП</option>
+                  <option value="mechanics">Механика</option>
+                  <option value="variable_speed_drive">Вариантор</option>
+                  <option value="robot">Робот</option>
+                </select>
+            </div>
+
+            <div class="label-car">
+                <label for="wheel">Руль</label>
+                <select id="wheel" name="wheel">
+                  <option value="right">Правый</option>
+                  <option value="left">Левый</option>
+                </select>
+            </div>
+
+            <div class="label-car">
+                <label for="city">Город/населенный пункт</label>
+                <select id="city" name="lable">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            </div>
+
+            <div class="label-car">
+                <label for="seller">Продавец</label>
+                <select id="seller" name="seller">
+                  <option value="owner">Собственник</option>
+                  <option value="private_trader">Частник</option>
+                  <option value="company">Компания</option>
+                </select>
+            </div>
+
+            <div class="label-car">
+                <label for="vin-number">VIN</label>
+                <input class="car-price" type="text" id="vin-number" name="vin-number" placeholder="VIN">
+            </div>
+
+            <div class="label-car">
+                <label for="drive">Привод</label>
+                <select id="drive" name="drive">
+                  <option value="front">Передний</option>
+                  <option value="rear">Задний</option>
+                  <option value="4WD">4WD</option>
+                </select>
+            </div>
+
+
+            <div class="label-car">
+                <label for="millage">Пробег (км)</label>
+                <input class="car-price" type="text" id="millage" name="millage" placeholder="км">
+            </div>
+
+            <div class="label-car-subject">
+                <label for="subject">Описание</label>
+                <textarea id="subject" name="subject" placeholder="Напишите тут описание, которое увидят другие прользователи" style="height:200px"></textarea>
+            </div>
+
+            <div class="label-car">
+                <label for="color">Цвет авто</label>
+                <select id="color" name="color">
+                    <option value="black">Черный</option>
+                    <option value="gray">Серый</option>
+                    <option value="white">Белый</option>
+                    <option value="green">Зеленый</option>
+                    <option value="red">Красный</option>
+                    <option value="blue">Синий</option>
+                </select>
+             </div>
+
+             <div class="label-car">
+                <label for="document">Цвет авто</label>
+                <select id="document" name="document">
+                    <option value="yes">В порядке</option>
+                    <option value="no">Нет или проблемные</option>
+                </select>
+             </div>
+
+
+            <div class="label-car">
+                <p>Фото автомобиля</p>
+                <p><input type="file" name="photo" multiple accept="image/*,image/jpeg"></p>
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+{% endblock %}

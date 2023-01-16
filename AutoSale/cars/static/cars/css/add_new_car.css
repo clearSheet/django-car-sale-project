@@ -1,0 +1,59 @@
+h1 {
+    color: white;
+    margin: 2%;
+}
+
+.post-data{
+    margin: 1% 2%;
+    width: 30%;
+}
+
+
+.label-car {
+    margin: 1% 25%;
+    font-size: 20px;
+    color: white;
+    width: 50%;
+    background: #5c5c5c;
+    padding: 12px 20px;
+    font-size: 30px;
+    border-radius: 2px;
+}
+
+.label-car select{
+    float: right;
+    margin: 1%;
+    height: 50%
+    width: 30px;
+    border-radius: 2px;
+}
+
+.car-price{
+    float:right;
+    border-radius: 2px;
+    margin: -3px;
+}
+
+.label-car-subject {
+    margin: 1% 25%;
+    font-size: 20px;
+    color: white;
+    width: 50%;
+    background: #5c5c5c;
+    padding: 12px 20px;
+    font-size: 30px;
+    border-radius: 2px;
+    height: 220px;
+}
+
+.label-car-subject textarea{
+    float:right;
+}
+
+.color div{
+    background: #f447ff;
+}
+
+.color-car {
+        background: red;
+}

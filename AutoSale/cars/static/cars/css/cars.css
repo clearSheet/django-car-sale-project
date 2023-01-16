@@ -1,0 +1,27 @@
+.price-car {
+    color: black;
+}
+
+.header-text {
+    font-size: 50px;
+    color: white;
+    margin-left: 3%;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.car-card-all {
+    border-style: dashed;
+    height: 40%;
+    margin: 3% 3%;
+    background: #5c5c5c;
+}
+
+.name-car {
+    margin: 1% 5%;
+    color: white;
+}
+
+.price-car {
+    margin: 1% 5%;
+}
