@@ -8,21 +8,13 @@
     <h1>Добавление нового объявления</h1>
     <div>
         <form method="post">
+
             <div class="label-car">
                 <label for="label">Марка авто</label>
                 <select id="label" name="lable">
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select>
-            </div>
-
-            <div class="label-car">
-                <label for="model">Модель авто</label>
-                <select id="model" name="lable">
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
+                    {% for brand_model in brands_and_models %}
+                        <option value={{ brand_model }} class="brand-model">{{ brand_model }}</option>
+                    {% endfor %}
                 </select>
             </div>
 
