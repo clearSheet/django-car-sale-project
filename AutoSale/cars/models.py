@@ -43,3 +43,16 @@ class Model_and_Brand_Cars(models.Model):
         verbose_name = 'Марка и модель автомобиля'
         verbose_name_plural = 'Марки и модели автомобилей'
 
+
+class Brands_Cars(models.Model):
+    id = models.IntegerField('ID', primary_key=True, auto_created=True)
+
+    brand = models.CharField('Марка автомобиля', max_length=250)
+
+    def __str__(self):
+        return self.brand
+
+    class Meta:
+        verbose_name = 'Марка автомобиля'
+        verbose_name_plural = 'Марки автомобилей'
+
