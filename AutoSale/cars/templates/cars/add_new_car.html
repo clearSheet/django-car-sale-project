@@ -1,7 +1,7 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 {% block head %}
-    <link rel="stylesheet" href="{% static 'cars/css/add_new_car.css' %}">
+    <link rel="stylesheet" href="{% static 'cars/css/test.css' %}">
 {% endblock %}
 {% block title %}Добавление объявления{% endblock %}
 {% block content %}
@@ -89,9 +89,9 @@
                 <input class="car-price" type="text" id="millage" name="millage" placeholder="км">
             </div>
 
-            <div class="label-car-subject">
+            <div class="label-car">
                 <label for="subject">Описание</label>
-                <textarea id="subject" name="subject" placeholder="Напишите тут описание, которое увидят другие прользователи" style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="Напишите тут описание, которое увидят другие прользователи" rows="4" cols="50"></textarea>
             </div>
 
             <div class="label-car">
@@ -115,7 +115,7 @@
              </div>
 
 
-            <div class="label-car">
+            <div class="label-car-photo">
                 <p>Фото автомобиля</p>
                 <p><input type="file" name="photo" multiple accept="image/*,image/jpeg"></p>
             </div>
